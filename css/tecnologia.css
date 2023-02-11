@@ -86,4 +86,8 @@
     justify-items: end;
     gap: 18px 36px;
   }
+  .tecnologia-atributos li{
+    grid-template-columns: 1fr;
+    justify-items: end;
+  }
 }
