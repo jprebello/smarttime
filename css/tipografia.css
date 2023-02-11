@@ -1,0 +1,108 @@
+.font-1-p {
+  font-family: "raleway", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.font-1-m {
+  font-family: "raleway", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.font-1-x {
+  font-family: "raleway", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.font-1-xx {
+  font-family: "raleway", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.font-1-xxl {
+  font-family: "raleway", Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.font-2-x {
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.font-2-xx {
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.font-3-m {
+  font-family: "barlow", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.font-3-x {
+  font-family: "barlow", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.font-3-x-i {
+  font-family: "barlow", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+@media (max-width: 1200px) {
+  .font-1-xxl {
+    font-size: 3rem;
+  }
+  .font-3-x-i {
+    font-size: 1.25rem;
+  }
+  .font-2-x {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .font-2-xx {
+    font-size: 1.75rem;
+  }
+  .font-1-xxl {
+    font-size: 2.5rem;
+  }
+  .font-3-x {
+    font-size: 1rem;
+  }
+  .font-3-x-i {
+    font-size: 1rem;
+  }
+  .font-3-m {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .font-3-m {
+    font-size: 1rem;
+  }
+  .font-1-x {
+    font-size: 1.5rem;
+  }
+  .font-1-p {
+    font-size: 0.75rem;
+  }
+}

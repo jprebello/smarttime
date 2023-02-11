@@ -1,0 +1,42 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: var(--cor-p0);
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.texto-roxo {
+  color: var(--cor-r3);
+}
