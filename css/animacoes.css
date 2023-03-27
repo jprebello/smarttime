@@ -1,0 +1,83 @@
+@keyframes fromLeft {
+  from{
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fromRight {
+  from{
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fromTop {
+  from{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fromBottom {
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.animacaoLeft{
+  animation: fromLeft .4s;
+}
+
+.animacaoRight{
+  animation: fromRight .4s;
+}
+
+.animacaoTop{
+  animation: fromTop .4s;
+}
+
+.animacaoBottom{
+  animation: fromBottom .4s;
+}
+
+.js [data-scroll="right"] {
+  opacity: 0;
+}
+
+.js [data-scroll="right"].animacaoRight {
+  opacity: 1;
+}
+
+.js [data-scroll="left"] {
+  opacity: 0;
+}
+
+.js [data-scroll="left"].animacaoLeft {
+  opacity: 1;
+}
+
+.js [data-scroll="bottom"]{
+  opacity: 0;
+}
+
+.js [data-scroll="bottom"].animacaoBottom{
+  opacity: 1;
+}

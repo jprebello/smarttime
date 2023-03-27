@@ -11,14 +11,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&family=Poppins:wght@500&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>
+    document.documentElement.className += ' js';
+  </script>
 </head>
 
 <body>
   <header class="header container">
     <a href="./"><img src="./img/logo.svg" alt="Logo SmartTime"></a>
     <nav>
-      <ul class="font-1-m menu">
-        <li><a href="">Smartwatch</a></li>
+      <div data-menu="botao">
+      </div>
+      <ul data-menu="mobile" class="font-1-m menu">
+        <li data-menu="dropdown">
+          <a href="">Smartwatches</a>
+          <ul data-dropdown>
+            <li><a href="">Time Finder</a></li>
+            <li><a href="">Smart Growth</a></li>
+            <li><a href="">Up Stepper</a></li>
+          </ul>
+        </li>
         <li><a href="">Tecnologia</a></li>
         <li><a href="">Contato</a></li>
       </ul>
@@ -26,17 +38,17 @@
   </header>
 
   <main class="main container">
-    <div class="main-conteudo">
+    <div class="main-conteudo animacaoLeft">
       <h1 class="font-2-xx">Smartwatch perfeito para sua <span class="texto-roxo">rotina.</span></h1>
       <p class="font-3-m">Controle suas atividades de forma simples. Tenha mais disciplina e produza com maior intensidade.</p>
       <a class="font-1-xx" href="./">Saiba Mais</a>
     </div>
-    <img src="./img/main@1x.jpg" alt="Smartwatch Up Stepper com seu design branco.">
+    <img src="./img/main@1x.jpg" alt="Smartwatch Up Stepper com seu design branco." class="animacaoRight">
   </main>
 
   <article class="tecnologia container">
-    <img src="./img/tecnologia@1x.jpg" alt="Usuário dos nossos smartwatches trabalhando com auxílio do relógio.">
-    <div class="tecnologia-conteudo">
+    <img src="./img/tecnologia@1x.jpg" alt="Usuário dos nossos smartwatches trabalhando com auxílio do relógio." data-scroll="left">
+    <div data-scroll="right" class="tecnologia-conteudo">
       <h2 class="font-2-xx">Relógio inteligente para pessoas <span class="texto-roxo">inteligentes.</span></h2>
       <p class="font-3-m">Tenha todas as informações úteis do seu dia quando precisar, com nossa tecnologia avançada, você poderá administrar o seu tempo e se tornar uma pessoa mais produtiva.</p>
       <a class="font-1-x" href="">Escolha um modelo</a>
@@ -61,10 +73,10 @@
     </div>
   </article>
 
-  <article class="smartwatch-bg">
+  <article data-anime="scroll" class="smartwatch-bg">
     <div class="smartwatch">
-      <h2 class="font-2-xx">Nossa principais <span class="texto-roxo">opções:</span></h2>
-      <ul class="smartwatch-itens">
+      <h2 data-scroll="left" class="font-2-xx">Nossa principais <span class="texto-roxo">opções:</span></h2>
+      <ul data-scroll="bottom" class="smartwatch-itens">
         <li>
           <a href="./">
             <img src="./img/relogio-1@1x.jpg" alt="Nossa principal opção para quem quer aproveitar todas as horas do dia.">
@@ -90,9 +102,9 @@
     </div>
   </article>
 
-  <section class="comunidade container">
-    <h2 class="font-2-xx">Faça parte da nossa <span class="texto-roxo">comunidade.</span></h2>
-    <ul class="comunidade-itens">
+  <section data-anime="scroll" class="comunidade container">
+    <h2 data-scroll="right" class="font-2-xx">Faça parte da nossa <span class="texto-roxo">comunidade.</span></h2>
+    <ul class="comunidade-itens" data-scroll="bottom">
       <li>
         <img src="./img/pessoa-1@1x.png" alt="Cliente satisfeito com sua produtividade graças aos nossos relógios.">
         <blockquote>
@@ -132,6 +144,8 @@
     </ul>
     <p class="font-3-m">SmartTime. Alguns direitos reservados.</p>
   </footer>
+
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>

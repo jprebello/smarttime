@@ -1,5 +1,6 @@
 .tecnologia {
   display: grid;
+  opacity: 1;
   grid-template-columns: 1fr 1fr;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -77,17 +78,19 @@
   }
 }
 
-@media (max-width: 420px){
+@media (max-width: 420px) {
   .tecnologia a::after {
     display: none;
   }
-  .tecnologia-atributos{
+  .tecnologia-atributos {
     grid-template-columns: 1fr;
     justify-items: end;
     gap: 18px 36px;
   }
-  .tecnologia-atributos li{
+  .tecnologia-atributos li {
     grid-template-columns: 1fr;
     justify-items: end;
   }
 }
+
+
